@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1053049178585",
+    "project_id": "uas-kotlin",
+    "storage_bucket": "uas-kotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053049178585:android:ba9a153d9bfc989418b1c8",
+        "android_client_info": {
+          "package_name": "com.tutik.project_uas_kotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053049178585-p7kskd6i80s3svfdkands494ld57abch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNApYHBkj9GBa0I0Srt9MWk06qYigsOE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053049178585-p7kskd6i80s3svfdkands494ld57abch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
