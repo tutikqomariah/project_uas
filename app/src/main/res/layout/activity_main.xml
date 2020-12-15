@@ -6,56 +6,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="12dp"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="100dp"
+        android:textSize="26dp"
+        android:textColor="@color/black"
+        android:text="DAFTAR RUMAH SAKIT RUJUKAN COVID-19 PROVINSI JAWA TIMUR" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:layout_alignTop="@+id/textView2"
         android:orientation="vertical">
-        <EditText
-            android:id="@+id/nim"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="NIM"
-            android:inputType="number" />
-        <EditText
-            android:id="@+id/nama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Masukan Nama"
-            android:inputType="textPersonName" />
-        <EditText
-            android:id="@+id/jurusan"
 
+        <Button
+            android:id="@+id/tambah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Jurusan"
-            android:inputType="textPersonName" />
-        <LinearLayout
+            android:background="#FFFFFF"
+            android:text="Tambah Data" />
+
+        <Button
+            android:id="@+id/showdata"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/save"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Simpan" />
-            <Button
-                android:id="@+id/showdata"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Lihat Data" />
-        </LinearLayout>
+            android:text="Lihat Data" />
+
         <Button
             android:id="@+id/logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Logout" />
+
+
+
     </LinearLayout>
 </RelativeLayout>

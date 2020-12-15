@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 //Inisialisasi ID (Button)
         val logout = findViewById<Button>(R.id.logout)
         logout.setOnClickListener(this)
-        val save = findViewById<Button>(R.id.save)
-        save.setOnClickListener(this)
+        val tambah = findViewById<Button>(R.id.tambah)
+        tambah.setOnClickListener(this)
         val showdata = findViewById<Button>(R.id.showdata)
         showdata.setOnClickListener(this)
 //Mendapatkan Instance Firebase Autentifikasi
@@ -36,8 +36,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
     override fun onClick(v: View) {
         when (v.getId()) {
-            R.id.save -> {
-// Statement program untuk simpan data
+            R.id.tambah -> {
+// Statement program untuk tambah data
+                startActivity(Intent(this@MainActivity, CreateActivity::class.java))
             }
             R.id.logout ->
 // Statement program untuk logout/keluar
