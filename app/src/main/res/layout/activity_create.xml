@@ -7,9 +7,9 @@
     tools:context=".MainActivity">
 
     <LinearLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/nama"
@@ -17,21 +17,21 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Nama RS"
-            android:inputType="number" />
+            android:inputType="textPersonName" />
         <EditText
             android:id="@+id/kota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Kota/Kab"
-            android:inputType="number" />
+            android:inputType="textPersonName" />
         <EditText
             android:id="@+id/notelp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="No Telp"
-            android:inputType="textPersonName" />
+            android:inputType="number" />
         <EditText
             android:id="@+id/alamat"
             android:layout_width="match_parent"
