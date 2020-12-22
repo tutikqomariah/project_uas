@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_UAS_Kotlin">
-        <activity android:name=".CreateActivity"></activity>
+        <activity android:name=".mengobati"></activity>
+        <activity android:name=".mencegah" />
+        <activity android:name=".mengenal" />
+        <activity android:name=".kasus_per_provinsi" />
+        <activity android:name=".home" />
+        <activity android:name=".CreateActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

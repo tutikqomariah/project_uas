@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".mencegah">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/shape">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana Mencegah COVID-19"
+                    android:textStyle="bold"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:text="
+Terdapat cara pencegahan yang terbaik yaitu dengan menghindari faktor-faktor yang bisa menyebabkan Anda terinfeksi virus ini, yaitu : \n\n
+1. Hindari bepergian ke tempat-tempat umum yang ramai pengunjung (social distancing)\n
+2. Gunakan masker saat beraktivitas di tempat umum atau keramaian\n
+3. Rutin mencuci tangan dengan air dan sabun atau hand sanitizer yang mengandung aloihoil minimal 60% setelah beraktivitas di luar rumah atau di tempat umum\n
+4. Hindari kontak dengan hewan, terutama hewan liar. Bila terjadi kontak dengan hewan, cuci tangan setelahnya\n
+5. Masak daging sampai benar-benar matang sebelum dikonsumsi\n
+6. Tutup mulut dan hidung dengan tisu saat batuk dan bersin, kemudian buang tisu ke tempat sampah\n
+7. Hindari berdekatan dengan orang yang sedang sakit demam, batuk, atau pilek\n
+8. Jaga kebersihan benda yang sering disentuh dan kebersihan lingkungan\n
+9. Jangan menyentuh mata, mulut, dan hidung sebelum mencuci tangan\n\n
+Untuk orang diduga terkena COVID-19 atau termasuk ODP (Orang Dalam Pemantauan), ada beberapa langkah yang bisa dilakukan agar virus Corona tidak menular ke orang lain, yaitu :\n\n
+1. Jangan keluar rumah, kecuali untuk mendapatkan pengobatan\n
+2. Periksakan diri ke dokter hanya bila Anda mengalami gejala gangguan pernapasan yang disertai demam atau memenuhi kriteria PDP (Pasien Dalam Pegawasan)\n
+3. Usahakan untuk tinggal terpisah dari orang lain untuk sementara waktu. Bila tidak memungkinkan, gunakan kamar tidur dan kamar mandi yang berbeda dengan yang digunakan orang lain\n
+4. Larang dan cegah orang lain untuk mengunjungi atau menjenguk Anda sampai Anda benar-benar sembuh\n
+5. Sebisa mungkin jangan melakukan pertemuan dengan orang yang sedang sakit\n
+6. Hindari berbagi penggunaan alat makan dan minum, alat mandi, serta perlengkapan tidur dengan orang lain\n
+7. Pakai masker dan sarung tangan bila sedang berada di tempat umum atau sedang bersama orang lain\n
+8. Gunakan tisu untuk menutup mulut dan hidung bila batuk atau bersin, lalu segera buang tisu ke tempat sampah\n"
+                    android:textSize="17sp"
+                    android:paddingBottom="575dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

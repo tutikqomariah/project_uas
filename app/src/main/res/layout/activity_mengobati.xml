@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".mengobati">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/shape">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bagaimana Mengobati COVID-19"
+                android:textStyle="bold"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:text="
+Infeksi virus Corona atau COVID-19 belum bisa diobati,, tetapi ada beberapa langkah yang dapat dilakukan dokter untuk meredakan gejalanya dan mencegah penyebaran virus, yaitu :\n\n
+1. Merujuk penderita COVID-19 untuk menjalani perawatan dan karantina di rumah sakit yang dirujuk\n
+2. Memberikan obat pereda demam dan nyeri yang aman dan sesuai kondisi penderita\n
+3. Menganjurkan penderita COVID-19  untuk istirahat yang cukup\n
+4. Menganjurkan penderita COVID-19 untuk banyak minum air putih untuk menjaga kadar cairan tubuh\n
+"
+                android:textSize="17sp"
+                android:paddingBottom="575dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
