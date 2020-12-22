@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         auth = FirebaseAuth.getInstance()
         if(auth!!.currentUser == null){
         } else {
-            intent = Intent(applicationContext, MainActivity::class.java)
+            intent = Intent(applicationContext, home::class.java)
             startActivity(intent)
             finish()
         }
@@ -56,7 +56,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 Toast.makeText(this, "Login Berhasil",
                         Toast.LENGTH_SHORT).show()
                 intent = Intent(applicationContext,
-                        MainActivity::class.java)
+                        home::class.java)
                 startActivity(intent)
                 finish()
             } else {
