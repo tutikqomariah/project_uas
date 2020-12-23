@@ -12,8 +12,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 
-class CreateActivity : AppCompatActivity(), View.OnClickListener {
-
+class CreateActivity : AppCompatActivity(), View.OnClickListener{
 
 
     //Membuat Kode Permintaan
@@ -68,9 +67,7 @@ class CreateActivity : AppCompatActivity(), View.OnClickListener {
                             Toast.LENGTH_SHORT
                     ).show()
                 } else {
-
-
-                    getReference.child("Admin").child(getUserID).child("DataRujukan").push()
+                    getReference.child("Admin").child(getUserID).child("Pasien").push()
                             .setValue(data_rujukan(getNama, getKota, getNoTelp, getAlamat))
                             .addOnCompleteListener(this) {
                                 nama.setText("")
