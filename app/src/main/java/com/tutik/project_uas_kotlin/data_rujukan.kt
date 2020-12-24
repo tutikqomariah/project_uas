@@ -1,8 +1,8 @@
 package com.tutik.project_uas_kotlin
-import androidx.room.Entity
-
-
-@Entity(tableName = "i_love_you")
+//import androidx.room.Entity
+//
+//
+//@Entity(tableName = "i_love_you")
 class data_rujukan {
 
     var nama: String? = null
@@ -11,6 +11,7 @@ class data_rujukan {
     var alamat: String? = null
     var key: String? = null
 
+    constructor() {}
     constructor(nama: String?, kota: String?, notelp: String?, alamat: String?) {
         this.nama = nama
         this.kota = kota

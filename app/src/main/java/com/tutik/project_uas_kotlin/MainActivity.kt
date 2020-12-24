@@ -20,8 +20,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //Inisialisasi ID (Button)
-        val logout = findViewById<Button>(R.id.logout)
-        logout.setOnClickListener(this)
         val tambah = findViewById<Button>(R.id.tambah)
         tambah.setOnClickListener(this)
         val showdata = findViewById<Button>(R.id.showdata)
@@ -40,22 +38,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 // Statement program untuk tambah data
                 startActivity(Intent(this@MainActivity, CreateActivity::class.java))
             }
-            R.id.logout ->
-// Statement program untuk logout/keluar
-                AuthUI.getInstance()
-                        .signOut(this)
-                        .addOnCompleteListener(object : OnCompleteListener<Void> {
-                            override fun onComplete(p0: Task<Void>) {
-                                Toast.makeText(this@MainActivity, "Logout Berhasil", Toast.LENGTH_SHORT).show()
-                                        intent = Intent(applicationContext,
-                                        LoginActivity::class.java)
-                                startActivity(intent)
-
-                                finish()
-
-                            }
-                        })
             R.id.showdata -> {
+                startActivity(Intent(this@MainActivity, MyListData::class.java))
             }
 
 
