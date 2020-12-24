@@ -11,6 +11,14 @@
         android:gravity="center"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rumah Sakit Rujukan Covid-19 Jawa Timur"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
         <EditText
             android:id="@+id/nama"
             android:layout_width="match_parent"
@@ -41,9 +49,10 @@
             android:inputType="textPersonName" />
         <Button
             android:id="@+id/simpan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Simpan" />
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/simpan"/>
 
     </LinearLayout>
 
