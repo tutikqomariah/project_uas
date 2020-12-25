@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
+import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -58,12 +60,22 @@ class RecyclerViewAdapter(private var listRujukan: ArrayList<data_rujukan>, cont
                     alert.setItems(action, DialogInterface.OnClickListener { dialog, i ->
                         when (i) {
                             0 -> {
+                                val bundle = Bundle()
+                                bundle.putString("Nama", listRujukan[position].nama)
+                                bundle.putString("Kota", listRujukan[position].kota)
+                                bundle.putString("Notelp", listRujukan[position].notelp)
+                                bundle.putString("Alamat", listRujukan[position].alamat)
+                                bundle.putString("getPrimaryKey", listRujukan[position].key)
+                                val intent = Intent(view.context, UpdateData::class.java)
+                                intent.putExtras(bundle)
+                                context.startActivity(intent)
+
                                 /* Berpindah Activity pada halaman layout updateData dan mengambil data pada
-                                listMahasiswa, berdasarkan posisinya untuk dikirim pada activity selanjutnya */
+                                listrujukan, berdasarkan posisinya untuk dikirim pada activity selanjutnya */
 
                             }
                             1 -> {
-                                //Menggunakan interface untuk mengirim data mahasiswa, yang akan dihapus
+                                //Menggunakan interface untuk mengirim data rujukan, yang akan dihapus
                                 listener?.onDeleteData(listRujukan.get(position), position)
                             }
                         }

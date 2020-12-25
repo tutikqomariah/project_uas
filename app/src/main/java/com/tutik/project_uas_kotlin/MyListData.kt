@@ -42,7 +42,7 @@ class MyListData :AppCompatActivity(), RecyclerViewAdapter.dataListener {
             .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     if (dataSnapshot.exists()) {
-
+                            dataRujukan.clear()
                         for (snapshot in dataSnapshot.children) {
 //Mapping data pada DataSnapshot ke dalam objek mahasiswa
                             val rujukan =
@@ -57,8 +57,8 @@ class MyListData :AppCompatActivity(), RecyclerViewAdapter.dataListener {
                         recyclerView?.adapter = adapter
 
                         (adapter as RecyclerViewAdapter).notifyDataSetChanged()
-                        Toast.makeText(applicationContext,"Data Berhasil Dimuat",
-                            Toast.LENGTH_LONG).show()
+                        //Toast.makeText(applicationContext,"Data Berhasil Dimuat",
+                            //Toast.LENGTH_LONG).show()
                     }
                 }
                 override fun onCancelled(databaseError: DatabaseError) {
